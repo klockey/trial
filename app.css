@@ -1,0 +1,47 @@
+@keyframes move-section-1 {
+  from {
+    top: 100px;
+  }
+  to {
+    top: 0px;
+  }
+}
+@keyframes move-section-2 {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 100px;
+  }
+}
+#section-1 {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: red;
+}
+#section-2 {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: blue;
+}
+
+#move-section-1 {
+  border: 2px solid black;
+}
+
+#move-section-2 {
+  border: 2px solid black;
+}
+
+#move-section-1:hover {
+  animation: move-section-1 1s ease-in-out;
+}
+#move-section-2:hover {
+  animation: move-section-2 1s ease-in-out;
+}
